@@ -13,7 +13,7 @@ int main(void)
 
 	while (s < e)
 	{
-		if (s == 101 || s == 103)
+		if (s == 101 || s == 113)
 		{
 			s++;
 			continue;
