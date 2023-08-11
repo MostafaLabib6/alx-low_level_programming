@@ -1,10 +1,10 @@
 #include<stdio.h>
 
-/*
-	main - print alphabet characters
-
-	Return: 0	
-*/
+/**
+ * main - print alphabet characters
+ * 
+ * Return: Always 1.
+ */
 
 int main(void)
 {
@@ -13,6 +13,6 @@ int main(void)
 	
 	while(s < e)
 		putchar(s++);
-
+	putchar('\n');
 	return (0);
 }
