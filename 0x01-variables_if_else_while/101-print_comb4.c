@@ -29,7 +29,7 @@ int main(void)
 					putchar(num3 + '0');
 					flag = 1;
 				}
-			}	
+			}
 		}
 	}
 	putchar('\n');
