@@ -1,18 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - print alphabet characters
+ * main - Prints the alphabet in lowercase.
  *
- * Return: Always 1.
+ * Return: Always 0.
  */
-
 int main(void)
 {
-	int s = 97;
-	int e = 123;
-	
-	while (s < e)
-		putchar(s++);
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+
 	putchar('\n');
+
 	return (0);
 }
