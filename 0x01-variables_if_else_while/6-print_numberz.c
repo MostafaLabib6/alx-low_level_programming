@@ -2,7 +2,7 @@
 
 /**
  *	main - print number from 0 to 10 using putchar
- * 
+ *
  * Return: Always 1.
  */
 int main(void)
