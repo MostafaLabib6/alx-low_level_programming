@@ -1,8 +1,8 @@
 #include<stdio.h>
 
 /**
- * main - print alphabet except e and q 
- * 
+ * main - print alphabet except e and q
+ *
  * Return: Always 1.
  */
 
@@ -20,5 +20,6 @@ int main(void)
 		}
 		putchar(s++);
 	}
+	putchar('\n');
 	return (0);
 }
