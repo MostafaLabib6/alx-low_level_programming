@@ -9,7 +9,7 @@
 int main(void)
 {
 	int s = 97, e = 123;
-	
+
 	while (s < e)
 	{
 		if (s < 97)
