@@ -2,9 +2,9 @@
 
 /**
  * add - add two numbers.
- * @a an integer
- * @b an integer
- * 
+ * @a: an integer
+ * @b: an integer
+ *
  * Return: Result of adding @a and @b
  */
 int add(int a, int b)
