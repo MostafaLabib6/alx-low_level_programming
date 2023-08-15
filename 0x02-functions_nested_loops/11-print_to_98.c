@@ -17,9 +17,9 @@ void print_to_98(int n)
 
 			if (n == 98)
 				continue;
-			puts(", ");
+			printf(", ");
 		}
-		puts("\n");
+		printf("\n");
 	}
 	else
 	{
@@ -29,8 +29,8 @@ void print_to_98(int n)
 
 			if (n == 98)
 				continue;
-			puts(", ");
+			printf(", ");
 		}
-		puts("\n");
+		printf("\n");
 	}
 }
