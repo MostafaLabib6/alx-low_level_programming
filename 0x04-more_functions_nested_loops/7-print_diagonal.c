@@ -1,21 +1,23 @@
 #include "main.h"
 
 /**
- * print_square - prints hashes squares.
- * @size: size of the square.
- * Return: no return.
+ * print_diagonal - prints diagonal line n times.
+ * @n: times diagonal line is printed.
+ * Return: void.
  */
-void print_square(int size)
+
+void print_diagonal(int n)
 {
 	int i, j;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < n; i++)
 	{
-		for (j = 0; j < size; j++)
+		for (j = 0; j < i; j++)
 		{
-			_putchar(35);
+			_putchar(' ');
 		}
-		if (i != size - 1)
+		_putchar(92);
+		if (i < (n - 1))
 			_putchar('\n');
 	}
 	_putchar('\n');
