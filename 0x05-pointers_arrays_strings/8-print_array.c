@@ -7,7 +7,7 @@
  * @n: elements parameter input
  * @a: string parameter input
  *
- * Return: Nothing
+ * Return: void
 */
 
 void print_array(int *a, int n)
