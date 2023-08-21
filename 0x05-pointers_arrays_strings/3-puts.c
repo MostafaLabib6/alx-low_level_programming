@@ -2,10 +2,12 @@
 #include<string.h>
 
 /**
- * _puts - print a string.
- * @str: array of char
- * Return: void.
- */
+ * _puts - prints a string, followed by a newline to stdout
+ *
+ * @str: string parameter to print
+ *
+ * Return: void
+*/
 
 void _puts(char *str)
 {

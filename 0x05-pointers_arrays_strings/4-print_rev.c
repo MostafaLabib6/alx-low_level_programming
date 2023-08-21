@@ -2,10 +2,12 @@
 #include<string.h>
 
 /**
- * print_rev - reverse a string.
- * @s: array of char
- * Return: void.
- */
+ * print_rev - prints a string in reverse
+ *
+ * @s: string parameter input
+ *
+ * Return: void
+*/
 
 void print_rev(char *s)
 {
