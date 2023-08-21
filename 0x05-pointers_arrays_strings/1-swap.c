@@ -2,7 +2,8 @@
 
 /**
  * swap_int : swap two integers
- *
+ * @a: an integer.
+ * @b: an integer.
  * Return: void.
  */
 
