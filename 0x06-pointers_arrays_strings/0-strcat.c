@@ -1,5 +1,6 @@
 #include"main.h"
 #include<string.h>
+
 /**
  * _strcat - function that concatenates two strings.
  *
@@ -10,6 +11,5 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char* str = strcat (src, dest)
-	return (str);
+	return (strcat(dest, src));
 }
