@@ -4,11 +4,12 @@
  * _strcat - function that concatenates two strings.
  *
  * @dest: string parameter input
- * @src:  string parameter input 
+ * @src: string parameter input 
  * Return: array of characters
 */
 
 char *_strcat(char *dest, char *src)
 {
-	return (strcat(src, dest));
+	strcat(src, dest)
+	return (src);
 }
