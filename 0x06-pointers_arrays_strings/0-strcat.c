@@ -6,11 +6,10 @@
  *
  * @dest: string parameter input
  * @src: string parameter input 
- * Return: array of characters
+ * Return: strcat(dest, src)
 */
 
 char *_strcat(char *dest, char *src)
 {
-	strcat(dest, src)
-	return (dest);
+	return (strcat (dest, src));
 }
