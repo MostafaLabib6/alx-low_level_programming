@@ -6,7 +6,7 @@
  * @n:int
  * Return:int
  */
- 
+
 int check(int a, int b)
 {
 	if (b < 2 || b % a == 0)
