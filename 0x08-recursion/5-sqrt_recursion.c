@@ -1,10 +1,11 @@
-#include <stdio.h>
-#include "main.h"
 /**
- * _sqrt_recursion - return sqrt of number
+ * _sqrt_recursion_wrapper - a wrapper that does the recursion bit
  *
- * @n: number
- * Return: sqrt of  number.
+ * @n : input number
+ * @min: minimum number to guess
+ * @max: maximum number to guess
+ *
+ * Return: square root of @n or -1
 */
 int _sqrt_recursion_wrapper(int n, int min, int max)
 {
