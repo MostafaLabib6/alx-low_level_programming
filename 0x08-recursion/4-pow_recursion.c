@@ -12,10 +12,13 @@
 int _pow_recursion(int x, int y)
 {
 	int ans;
-	
-	if (y < 0) return (-1);
-	if (x == 0) return (0);
-	if (y == 0) return (1);
+
+	if (y < 0)
+		return (-1);
+	if (x == 0)
+		return (0);
+	if (y == 0) 
+		return (1);
 	ans = _pow_recursion(x, y / 2);
 	ans = ans * ans;
 	if (y & 1)
