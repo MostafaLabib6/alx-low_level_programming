@@ -2,28 +2,24 @@
 #include "main.h"
 
 /**
- * is_prime_number - check if number is prime
+ * is_prime_number - states if number is prime
  * @n:int
- *
- * Return: int
+ * Return:int
  */
  
+int check(int a, int b)
+{
+	if (b < 2 || b % a == 0)
+		return (0);
+	else if (a > b / 2)
+		return (1);
+	else
+		return (check(a + 1, b));
+}
+
 int is_prime_number(int n)
 {
-
-  int i, flag = 0;
-
-  if (n <= 0 || n == 1)
-	   return (1);
-
-  for (i = 2; i <= n / 2; ++i)
-   {
-		if (n % i == 0)
-		{
-			flag = 1;
-			break;
-		}
-   }
-
-	return (!flag);
+	if (n == 2)
+		return (1);
+	return (check(2, n));
 }
