@@ -1,33 +1,49 @@
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * *str_concat - a function that concatenate two strings
+ * str_concat - a function that concatenates two strings.
  *
- * @s1: input string 
- * @s2: input string
- * Return: arr
- *         
+ * @s1: input to string 1
+ * @s2: input to string 2
+ *
+ * Return: NULL on faliure
 */
 
 char *str_concat(char *s1, char *s2)
 {
-    int len = strlen(s1) + strlen(s2) + 1;
-    int i = 0 , j = 0;
-    char *arr;
+	int a = 0, b = 0;
+	int i, j;
+	char *s;
 
-    arr = malloc(len * sizeof(char));
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-    while (s1[i] != '\0' && s1 != NULL)
+	/*find length of str1 & str2*/
+	while (s1[a] != '\0')
+		a++;
+	while (s2[b] != '\0')
+		b++;
+
+	/*+1 for our end of string character*/
+	s = malloc((a * sizeof(char)) + ((b + 1) * sizeof(char)));
+
+	if (s == NULL)
+		return (NULL);
+
+	/*add the first string to array s*/
+	for (i = 0; s1[i] != '\0'; i++)
+		s[i] = s1[i];
+	/*add the second string to array s*/
+	for (j = 0; s2[j] != '\0'; j++)
 	{
-		arr[i] = s1[i];
+		s[i] = s2[j];
 		i++;
 	}
-    while (s2[j] != '\0' && s2 != NULL)
-	{
-		arr[j] = s2[j];
-		j++;
-	}
-    arr[j+1] = '\0';
-    return arr;
+
+	/*null terminate our new string*/
+	s[i] = '\0';
+
+	return (s);
 }
