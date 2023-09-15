@@ -28,10 +28,10 @@ int op_sub(int a, int b)
 
 
 /**
- * op_mul - multiplies @a by @b
+ * op_mul - multiplies @a and @b
  *
- * @a: int 
- * @b: int
+ * @a: input 1
+ * @b: input 2
  *
  * Return: product of @a and @b
 */
